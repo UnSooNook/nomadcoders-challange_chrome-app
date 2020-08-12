@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Number Game</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header__title">Random Number Game</h1>
+    </header>
+
+    <div class="description">
+      <span class="description__sentence">Generate a number between 0 and</span>
+      <span class="description__number">100</span>
+    </div>
+
+    <form class="number-range">
+      <span class="number-range__0">0</span>
+      <input
+        class="number-range__input"
+        type="range"
+        min="0"
+        max="200"
+        list="mark"
+        step="5"
+        value="100"
+      />
+      <span class="number-range__200">200</span>
+      <datalist class="number-range__input__mark" id="mark">
+        <option value="0" />
+        <option value="50" />
+        <option value="100" />
+        <option value="150" />
+        <option value="200" />
+      </datalist>
+    </form>
+
+    <form class="number-guess">
+      <label class="number-guess__label text-general" for="input"
+        >Guess the number :
+      </label>
+      <input
+        id="input"
+        class="number-guess__input"
+        placeholder="input number"
+        type="number"
+        min="0"
+        max="100"
+        required
+      />
+      <input class="number-guess__btn" type="submit" value="Play!" />
+    </form>
+
+    <div class="number-display">
+      <!-- <span class="text-general">You chose :</span>
+      <span class="number-display__yours text-general">00</span>
+      <span class="text-general">, the machine chose :</span>
+      <span class="number-display__machines text-general">00</span>
+      <span class="text-general">.</span> -->
+
+      <span class="text-general">
+        You chose :
+        <span class="number-display__yours text-general">00</span>, The machine
+        chose : <span class="number-display__machines text-general">00</span>.
+      </span>
+    </div>
+
+    <div class="answer">
+      <span class="text-thick">You</span>
+      <span class="answer__word text-thick">Lost</span>
+      <span class="text-thick">!</span>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
