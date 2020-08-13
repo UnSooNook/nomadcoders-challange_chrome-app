@@ -2,6 +2,10 @@
 
 @import "reset.css";
 @import "variables.css";
+@import "animations.css";
+
+/* contents */
+@import "contents/search.css";
 
 body {
     font-family: "Noto Sans KR", sans-serif;
@@ -19,42 +23,75 @@ body {
     height: 10%;
 }
 
-.search {
+.blank-2 {
+    background-color: rgba(172, 255, 47, 0.5);
+    height: 15%;
+}
+
+.blank-3 {
+    background-color: rgba(59, 226, 129, 0.5);
+    height: 20%;
+}
+
+.contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+}
+
+.contents-clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.contents-clock__time {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 60%;
+    width: 75%;
+}
+
+.contents-clock__date {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10%;
-}
-.search-block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
-    width: 50%;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-}
-.search-block__engine {
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--main-text-light);
-    margin-right: 20px;
-}
-.search-block__form {
-    width: 90%;
-}
-.search-block__input {
-    border: none;
-    border-left: 4px solid var(--main-text-dark);
-    background: none;
-    width: 100%;
-    padding: 2.5px 10px;
-    color: var(--main-text-light);
-    font-weight: 600;
-    font-size: 28px;
+    margin-top: 3%;
 }
 
-.blank-2 {
-    background-color: rgba(172, 255, 47, 0.5);
-    height: 80%;
+.contents-clock__time__apm {
+    position: absolute;
+    font-size: 750%;
+    left: 25%;
+}
+
+.contents-clock__time__hm {
+    display: block;
+    width: 40%;
+    font-size: 1500%;
+    text-align: right;
+}
+
+.contents-clock__time__sec {
+    position: absolute;
+    right: 28%;
+    font-size: 750%;
+}
+
+.contents-clock__date__span {
+    font-size: 200%;
+}
+
+.text-light {
+    color: var(--main-text-light);
+}
+
+.text-dark {
+    color: var(--main-text-dark);
 }
