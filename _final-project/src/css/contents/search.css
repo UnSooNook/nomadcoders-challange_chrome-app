@@ -11,15 +11,15 @@
     align-items: center;
     height: 50%;
     width: 50%;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 1em;
 }
 
 .search-block__engine {
-    font-size: 28px;
+    font-size: 2em;
     font-weight: 700;
-    color: var(--main-text-light);
-    margin-right: 20px;
+    color: var(--white);
+    margin-right: 0.5em;
 }
 
 .search-block__form {
@@ -28,11 +28,10 @@
 
 .search-block__input {
     border: none;
-    border-left: 4px solid var(--main-text-dark);
+    border-bottom: 0.1em solid var(--white);
     background: none;
     width: 100%;
-    padding: 2.5px 10px;
-    color: var(--main-text-light);
-    font-weight: 600;
-    font-size: 28px;
+    color: var(--white);
+    font-size: 1.5em;
+    padding: 0.15em 0em;
 }
