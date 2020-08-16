@@ -6,6 +6,7 @@
 
 /* contents */
 @import "contents/search.css";
+@import "contents/menu.css";
 @import "contents/contents.css";
 
 body {
@@ -25,13 +26,8 @@ body {
     height: 10%;
 }
 
-.blank-2 {
-    /* background-color: rgba(172, 255, 47, 0.5); */
-    height: 15%;
-}
-
 .blank-3 {
-    background-color: rgba(59, 226, 129, 0.5);
+    /* background-color: rgba(59, 226, 129, 0.5); */
     height: 20%;
 }
 
@@ -41,4 +37,41 @@ body {
 
 .text-dark {
     color: var(--grey-light);
+}
+
+.showing-off {
+    display: none;
+}
+
+.greeting {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: var(--white);
+}
+
+.greeting__form,
+.greeting__span {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+.greeting__input {
+    border: none;
+    background: none;
+    color: var(--white);
+    font-size: 1em;
+    text-align: center;
+    border-bottom: 0.1em solid var(--white);
+}
+
+.greeting__input::placeholder {
+    color: var(--white);
+}
+
+.greeting__input:focus::placeholder {
+    color: transparent;
 }

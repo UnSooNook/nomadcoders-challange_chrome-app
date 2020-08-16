@@ -38,6 +38,28 @@
     }
 }
 
+@keyframes fadeout-point {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+@keyframes fadein-point {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .fadeout-left {
     animation-duration: 1s;
     animation-name: fadeout-left;
@@ -56,4 +78,14 @@
 .fadein-right {
     animation-duration: 1s;
     animation-name: fadein-right;
+}
+
+.fadeout-point {
+    animation-duration: 1s;
+    animation-name: fadeout-point;
+}
+
+.fadein-point {
+    animation-duration: 1s;
+    animation-name: fadein-point;
 }

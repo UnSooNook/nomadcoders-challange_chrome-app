@@ -139,3 +139,7 @@ a {
 a:visited {
     color: inherit;
 }
+
+li {
+    margin-bottom: 1em;
+}
