@@ -1,43 +1,3 @@
-@keyframes fadeout-left {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-        transform: translate(-25%);
-    }
-}
-
-@keyframes fadeout-right {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-        transform: translate(25%);
-    }
-}
-
-@keyframes fadein-left {
-    from {
-        opacity: 0;
-        transform: translate(-25%);
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadein-right {
-    from {
-        opacity: 0;
-        transform: translate(25%);
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 @keyframes fadeout-point {
     from {
         opacity: 1;
@@ -58,26 +18,6 @@
         opacity: 1;
         transform: scale(1);
     }
-}
-
-.fadeout-left {
-    animation-duration: 1s;
-    animation-name: fadeout-left;
-}
-
-.fadeout-right {
-    animation-duration: 1s;
-    animation-name: fadeout-right;
-}
-
-.fadein-left {
-    animation-duration: 1s;
-    animation-name: fadein-left;
-}
-
-.fadein-right {
-    animation-duration: 1s;
-    animation-name: fadein-right;
 }
 
 .fadeout-point {

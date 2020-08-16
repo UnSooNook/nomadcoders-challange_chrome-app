@@ -1,6 +1,7 @@
 /* elements */
 @import "clock.css";
 @import "todo.css";
+@import "weather.css";
 
 .contents {
     display: flex;
